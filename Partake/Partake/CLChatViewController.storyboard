@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eKM-bk-zOn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="1M5-hO-eWY">
+            <objects>
+                <viewController id="eKM-bk-zOn" customClass="CLChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P1Y-LB-IZt"/>
+                        <viewControllerLayoutGuide type="bottom" id="cD4-05-HtI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iap-eq-271">
+                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ld8-RH-ipu">
+                                <rect key="frame" x="180" y="298" width="54" height="28"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Kok-u7-xoz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eKM-bk-zOn" id="9QI-TB-1v0"/>
+                                    <outlet property="delegate" destination="eKM-bk-zOn" id="rzJ-Vo-p9m"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kok-u7-xoz" firstAttribute="leading" secondItem="iap-eq-271" secondAttribute="leading" id="0u3-bk-f9j"/>
+                            <constraint firstAttribute="centerX" secondItem="Ld8-RH-ipu" secondAttribute="centerX" id="R8P-CK-Iuj"/>
+                            <constraint firstItem="cD4-05-HtI" firstAttribute="top" secondItem="Kok-u7-xoz" secondAttribute="bottom" id="UD0-nE-3DI"/>
+                            <constraint firstAttribute="centerY" secondItem="Ld8-RH-ipu" secondAttribute="centerY" id="UXJ-pW-puX"/>
+                            <constraint firstItem="Kok-u7-xoz" firstAttribute="top" secondItem="P1Y-LB-IZt" secondAttribute="bottom" id="Y1s-H4-Q5E"/>
+                            <constraint firstAttribute="trailing" secondItem="Kok-u7-xoz" secondAttribute="trailing" id="mbN-1n-dI4"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableView" destination="Kok-u7-xoz" id="jI9-F9-U4r"/>
+                        <segue destination="fVR-5k-ZwF" kind="show" identifier="UserSegue" id="3M9-Hq-zCw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBE-JF-ZHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="393"/>
+        </scene>
+        <!--Users-->
+        <scene sceneID="XAT-ay-xxC">
+            <objects>
+                <tableViewController title="Users" id="fVR-5k-ZwF" customClass="CLUsersViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bkN-h5-Von">
+                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="fVR-5k-ZwF" id="AzT-ZD-b5n"/>
+                            <outlet property="delegate" destination="fVR-5k-ZwF" id="Z7p-gc-kpP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83l-Ww-ks5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="-532"/>
+        </scene>
+    </scenes>
+</document>

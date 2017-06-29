@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleCell" rowHeight="90" id="KGk-i7-Jjw" customClass="CLCreateActivityTitleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kin-TS-1jS" customClass="CLTextField">
+                        <rect key="frame" x="15" y="42" width="290" height="35"/>
+                        <color key="backgroundColor" red="0.94902002809999997" green="0.82744997740000004" blue="0.74901998039999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Lwj-Rv-5vy"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="i5a-M1-PJz"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li9-Yz-n3C">
+                        <rect key="frame" x="15" y="11" width="100" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="PCO-aR-JIq"/>
+                            <constraint firstAttribute="width" constant="100" id="mj2-Hl-3s6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                        <color key="textColor" red="0.16380352209999999" green="0.16380352209999999" blue="0.16380352209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URx-zl-3cg">
+                        <rect key="frame" x="15" y="0.0" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.50980392159999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="p2p-ir-E3D"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Li9-Yz-n3C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="JG7-DC-PmH"/>
+                    <constraint firstItem="URx-zl-3cg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="VIT-P1-Gms"/>
+                    <constraint firstItem="URx-zl-3cg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="X3l-3k-QdE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="URx-zl-3cg" secondAttribute="trailing" constant="7" id="be6-pl-aJG"/>
+                    <constraint firstItem="Kin-TS-1jS" firstAttribute="top" secondItem="Li9-Yz-n3C" secondAttribute="bottom" constant="9" id="fjr-GU-rKr"/>
+                    <constraint firstItem="Li9-Yz-n3C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="i5n-pk-7Mq"/>
+                    <constraint firstItem="Kin-TS-1jS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="lzf-lo-349"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Kin-TS-1jS" secondAttribute="trailing" constant="7" id="xoe-0L-eX0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="separatorView" destination="URx-zl-3cg" id="voM-WC-Shb"/>
+                <outlet property="titleLabel" destination="Li9-Yz-n3C" id="gf1-tl-2bq"/>
+                <outlet property="titleTextField" destination="Kin-TS-1jS" id="1eC-pe-Mzj"/>
+            </connections>
+            <point key="canvasLocation" x="291" y="317"/>
+        </tableViewCell>
+    </objects>
+</document>

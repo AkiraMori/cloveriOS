@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityDetailsPendingCellIdentifier" rowHeight="50" id="KGk-i7-Jjw" customClass="CLActivityDetailsPendingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rl-Re-NxI">
+                        <rect key="frame" x="8" y="8" width="304" height="33"/>
+                        <color key="backgroundColor" red="0.81568998100000001" green="0.84706002469999997" blue="0.76471000909999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                        <state key="normal" title="Cancel Request">
+                            <color key="titleColor" red="0.16380352209999999" green="0.16380352209999999" blue="0.16380352209999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="cancelRequest:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GGe-9h-F2l"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="5Rl-Re-NxI" secondAttribute="centerY" id="4bZ-ML-ARA"/>
+                    <constraint firstAttribute="bottom" secondItem="5Rl-Re-NxI" secondAttribute="bottom" constant="8" id="PVb-40-e7U"/>
+                    <constraint firstItem="5Rl-Re-NxI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="QS9-0a-wtL"/>
+                    <constraint firstAttribute="centerX" secondItem="5Rl-Re-NxI" secondAttribute="centerX" id="QnS-4v-2ac"/>
+                    <constraint firstAttribute="trailing" secondItem="5Rl-Re-NxI" secondAttribute="trailing" constant="8" id="TTn-xn-Ym2"/>
+                    <constraint firstItem="5Rl-Re-NxI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="fuK-Gr-XxT"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="4bZ-ML-ARA"/>
+                        <exclude reference="QnS-4v-2ac"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cancelRequestButton" destination="5Rl-Re-NxI" id="aBR-v9-Bk6"/>
+            </connections>
+            <point key="canvasLocation" x="-132" y="-277"/>
+        </tableViewCell>
+    </objects>
+</document>

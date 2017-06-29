@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+            <string>Montserrat-Light</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLSendRequestViewController">
+            <connections>
+                <outlet property="characterCount" destination="lzX-qo-UQN" id="10i-8a-PxK"/>
+                <outlet property="noteTextView" destination="IIH-Q2-k8c" id="Jgd-Ah-yud"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a short note to include with your request:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50H-Vd-ebf">
+                    <rect key="frame" x="19" y="13" width="376" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="aA6-Fx-rzv"/>
+                        <constraint firstAttribute="width" constant="376" id="mBg-Bi-9kK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hey! This sounds fun. I would love to join you for this!" translatesAutoresizingMaskIntoConstraints="NO" id="IIH-Q2-k8c">
+                    <rect key="frame" x="16" y="77" width="382" height="190"/>
+                    <color key="backgroundColor" red="0.94510000940000005" green="0.83136999609999995" blue="0.75293999909999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="382" id="8al-uv-kBx"/>
+                        <constraint firstAttribute="height" constant="190" id="hve-vJ-076"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="HA0-O4-qbw"/>
+                    </connections>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="400" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzX-qo-UQN">
+                    <rect key="frame" x="353" y="57" width="40" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="I3M-eD-pEd"/>
+                        <constraint firstAttribute="width" constant="40" id="hkh-gb-W8X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="50H-Vd-ebf" secondAttribute="centerX" id="4IV-AU-NY5"/>
+                <constraint firstAttribute="trailing" secondItem="50H-Vd-ebf" secondAttribute="trailing" constant="19" id="4iI-Dn-i4x"/>
+                <constraint firstAttribute="trailing" secondItem="IIH-Q2-k8c" secondAttribute="trailing" constant="16" id="EGc-Ip-Ghu"/>
+                <constraint firstItem="IIH-Q2-k8c" firstAttribute="top" secondItem="50H-Vd-ebf" secondAttribute="bottom" constant="27" id="Vw7-2D-UgG"/>
+                <constraint firstItem="50H-Vd-ebf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="13" id="YDK-eN-OTO"/>
+                <constraint firstItem="50H-Vd-ebf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="hgw-bD-ki1"/>
+                <constraint firstAttribute="trailing" secondItem="lzX-qo-UQN" secondAttribute="trailing" constant="21" id="iQC-nb-6k1"/>
+                <constraint firstItem="lzX-qo-UQN" firstAttribute="top" secondItem="50H-Vd-ebf" secondAttribute="bottom" constant="7" id="sBh-dc-S9b"/>
+                <constraint firstItem="IIH-Q2-k8c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="sUR-RP-Xpu"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+</document>

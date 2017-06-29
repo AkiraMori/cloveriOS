@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CLGenericUserDataCell" id="gTV-IL-0wX" customClass="CLGenericUserDataCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activity-details-avatar-primary-color" translatesAutoresizingMaskIntoConstraints="NO" id="SXw-ct-7ap">
+                        <rect key="frame" x="19" y="5" width="62" height="74"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="74" id="ucI-fJ-UOu"/>
+                            <constraint firstAttribute="width" constant="62" id="ui9-p1-fZn"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ay-sQ-0VC" customClass="APAvatarImageView">
+                        <rect key="frame" x="21" y="7" width="58" height="58"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PK8-b0-fUY">
+                        <rect key="frame" x="32" y="78" width="37" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="E5y-tT-huE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
+                        <color key="textColor" red="0.16380352209999999" green="0.16380352209999999" blue="0.16380352209999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="PK8-b0-fUY" secondAttribute="centerX" id="C29-NZ-7FI"/>
+                <constraint firstItem="PK8-b0-fUY" firstAttribute="top" secondItem="SXw-ct-7ap" secondAttribute="bottom" constant="-1" id="Dr2-6Q-fLb"/>
+                <constraint firstAttribute="centerX" secondItem="SXw-ct-7ap" secondAttribute="centerX" id="Gpl-D6-XqX"/>
+                <constraint firstItem="SXw-ct-7ap" firstAttribute="trailing" secondItem="8ay-sQ-0VC" secondAttribute="trailing" constant="2" id="JHR-ka-XYM"/>
+                <constraint firstItem="SXw-ct-7ap" firstAttribute="bottom" secondItem="8ay-sQ-0VC" secondAttribute="bottom" constant="14" id="LCI-eQ-S0j"/>
+                <constraint firstAttribute="trailing" secondItem="PK8-b0-fUY" secondAttribute="trailing" constant="24" id="O9z-Ny-nP9"/>
+                <constraint firstItem="SXw-ct-7ap" firstAttribute="leading" secondItem="8ay-sQ-0VC" secondAttribute="leading" constant="-2" id="Swg-JI-2wf"/>
+                <constraint firstItem="PK8-b0-fUY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="ZrJ-Dp-6Im"/>
+                <constraint firstItem="SXw-ct-7ap" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="hXm-Yo-f36"/>
+                <constraint firstItem="SXw-ct-7ap" firstAttribute="top" secondItem="8ay-sQ-0VC" secondAttribute="top" constant="-2" id="mL9-6v-Yuq"/>
+            </constraints>
+            <size key="customSize" width="104" height="103"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="O9z-Ny-nP9"/>
+                    <exclude reference="ZrJ-Dp-6Im"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="avatarImageView" destination="8ay-sQ-0VC" id="BbF-Ds-XkV"/>
+                <outlet property="nameAndAgeLabel" destination="PK8-b0-fUY" id="O2A-OF-Lbb"/>
+            </connections>
+            <point key="canvasLocation" x="-73" y="89"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="activity-details-avatar-primary-color" width="85" height="102"/>
+    </resources>
+</document>

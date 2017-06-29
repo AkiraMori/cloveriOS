@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="60" id="0jB-xd-MGI" customClass="CLFacebookAlbumCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0jB-xd-MGI" id="LES-e8-f3S">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aBe-4g-WFt" userLabel="Cover Picture">
+                        <rect key="frame" x="8" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Std-ZU-Ev2"/>
+                            <constraint firstAttribute="width" constant="50" id="kEe-9e-kjA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcz-pN-Nd3">
+                        <rect key="frame" x="66" y="9" width="213" height="16"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eb6-lB-s90">
+                        <rect key="frame" x="66" y="36" width="36" height="15"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uBq-8i-lC9">
+                        <rect key="frame" x="0.0" y="59" width="387" height="0.0"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="eod-c0-dU8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dcz-pN-Nd3" firstAttribute="top" secondItem="aBe-4g-WFt" secondAttribute="top" constant="4" id="1dq-Ya-g3c"/>
+                    <constraint firstItem="uBq-8i-lC9" firstAttribute="leading" secondItem="LES-e8-f3S" secondAttribute="leading" id="3YK-0i-n5T"/>
+                    <constraint firstAttribute="centerY" secondItem="aBe-4g-WFt" secondAttribute="centerY" id="CS4-ef-vUU"/>
+                    <constraint firstItem="Eb6-lB-s90" firstAttribute="leading" secondItem="dcz-pN-Nd3" secondAttribute="leading" id="EUu-xz-uWP"/>
+                    <constraint firstAttribute="bottom" secondItem="uBq-8i-lC9" secondAttribute="bottom" id="Geq-tC-BLQ"/>
+                    <constraint firstAttribute="trailing" secondItem="uBq-8i-lC9" secondAttribute="trailing" constant="-100" id="cZK-iK-Ck7"/>
+                    <constraint firstItem="aBe-4g-WFt" firstAttribute="bottom" secondItem="Eb6-lB-s90" secondAttribute="bottom" constant="4" id="lAI-rM-zY2"/>
+                    <constraint firstItem="aBe-4g-WFt" firstAttribute="leading" secondItem="LES-e8-f3S" secondAttribute="leading" constant="8" id="rgq-Vj-Fyl"/>
+                    <constraint firstItem="dcz-pN-Nd3" firstAttribute="leading" secondItem="aBe-4g-WFt" secondAttribute="trailing" constant="8" id="u2H-Lv-H30"/>
+                    <constraint firstAttribute="trailing" secondItem="dcz-pN-Nd3" secondAttribute="trailing" constant="8" id="uLt-1A-0bd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgCoverPicture" destination="aBe-4g-WFt" id="otb-gR-wdw"/>
+                <outlet property="lblCount" destination="Eb6-lB-s90" id="wkP-ZP-ZQk"/>
+                <outlet property="lblTitle" destination="dcz-pN-Nd3" id="DMa-ok-q51"/>
+            </connections>
+            <point key="canvasLocation" x="491" y="377"/>
+        </tableViewCell>
+    </objects>
+</document>

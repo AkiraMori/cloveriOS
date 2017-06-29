@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CLRequestEmptyTableView">
+            <rect key="frame" x="0.0" y="44" width="414" height="643"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7I-xM-WfG">
+                    <rect key="frame" x="52" y="267" width="311" height="110"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Requests" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nf-hb-C1J">
+                            <rect key="frame" x="30" y="24" width="250" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="GzR-AA-bdX"/>
+                                <constraint firstAttribute="width" constant="250" id="KnQ-vD-1cx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="19"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap anywhere or Pull to reload" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AP4-Zh-GEk">
+                            <rect key="frame" x="57" y="65" width="196" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="196" id="Hb3-FB-hdL"/>
+                                <constraint firstAttribute="height" constant="21" id="Yho-dS-xG9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="AP4-Zh-GEk" firstAttribute="leading" secondItem="t7I-xM-WfG" secondAttribute="leading" constant="57" id="6fr-52-bCZ"/>
+                        <constraint firstAttribute="bottom" secondItem="AP4-Zh-GEk" secondAttribute="bottom" constant="24" id="EgK-yy-eAU"/>
+                        <constraint firstAttribute="trailing" secondItem="6Nf-hb-C1J" secondAttribute="trailing" constant="31" id="ILf-Od-Oea"/>
+                        <constraint firstAttribute="trailing" secondItem="AP4-Zh-GEk" secondAttribute="trailing" constant="58" id="JwE-tW-3AJ"/>
+                        <constraint firstAttribute="height" constant="110" id="K7Q-Yk-1Yw"/>
+                        <constraint firstItem="6Nf-hb-C1J" firstAttribute="top" secondItem="t7I-xM-WfG" secondAttribute="top" constant="24" id="QRL-6N-Wcb"/>
+                        <constraint firstAttribute="width" constant="311" id="jmr-7C-DIY"/>
+                        <constraint firstItem="AP4-Zh-GEk" firstAttribute="top" secondItem="6Nf-hb-C1J" secondAttribute="bottom" constant="18" id="vWY-no-0EB"/>
+                        <constraint firstItem="6Nf-hb-C1J" firstAttribute="leading" secondItem="t7I-xM-WfG" secondAttribute="leading" constant="30" id="w7m-N3-CS0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="t7I-xM-WfG" secondAttribute="centerY" id="hbN-aF-rtN"/>
+                <constraint firstAttribute="centerX" secondItem="t7I-xM-WfG" secondAttribute="centerX" id="vDr-Eg-uw6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="356" y="416"/>
+        </view>
+    </objects>
+</document>

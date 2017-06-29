@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1713" minimumToolsVersion="Automatic">
+    <entity name="CLActivity" representedClassName="CLActivity" syncable="YES">
+        <attribute name="activityDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activityEndDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ageFilterFrom" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="ageFilterTo" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deleteActivity" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fromTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isAtendeeVisible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isLiked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="likes" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="visibility" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activityLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CLLocationActivity" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CLUser" syncable="YES"/>
+    </entity>
+    <entity name="CLLocationActivity" representedClassName="CLLocationActivity" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="formattedAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="formattedStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="locality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="neighborhood" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stateShort" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CLRequest" representedClassName="CLRequest" syncable="YES">
+        <attribute name="activityDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activityType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestCreatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="requestId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestNote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requestUpdatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userAge" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="userFbId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activityCreator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CLUser" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CLUser" syncable="YES"/>
+    </entity>
+    <entity name="CLUser" representedClassName="CLUser" syncable="YES">
+        <attribute name="aboutMe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activeFrom" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="age" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="blocked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="blockedUsers" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="defaultActivitiesAgeFrom" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="defaultActivitiesAgeTo" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="defaultActivitiesCreatedBy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="defaultLimitSearchResults" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fbUserId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fbUserToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pictures" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CLActivity" positionX="-81" positionY="65" width="128" height="360"/>
+        <element name="CLLocationActivity" positionX="-324" positionY="54" width="128" height="240"/>
+        <element name="CLRequest" positionX="-324" positionY="153" width="128" height="270"/>
+        <element name="CLUser" positionX="-144" positionY="216" width="128" height="345"/>
+    </elements>
+</model>

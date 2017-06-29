@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ViewableByCell" rowHeight="80" id="KGk-i7-Jjw" customClass="CLCreateActivityFiltersViewableByCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Wl-6u-6ip">
+                        <rect key="frame" x="15" y="40" width="290" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="8dK-pY-XBi"/>
+                        </constraints>
+                        <segments>
+                            <segment title="Everyone"/>
+                            <segment title="FB Friends"/>
+                            <segment title="FB F o F"/>
+                        </segments>
+                        <color key="tintColor" red="0.47058999540000002" green="0.70196002719999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </segmentedControl>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viewable by:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1K-YP-glz">
+                        <rect key="frame" x="15" y="9" width="86" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="0JJ-QO-eG5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                        <color key="textColor" red="0.16380352209999999" green="0.16380352209999999" blue="0.16380352209999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Wl-6u-6ip" firstAttribute="top" secondItem="f1K-YP-glz" secondAttribute="bottom" constant="9" id="3VS-jd-OMx"/>
+                    <constraint firstItem="8Wl-6u-6ip" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="7az-WP-Er5"/>
+                    <constraint firstItem="f1K-YP-glz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="PaY-Xq-IXe"/>
+                    <constraint firstItem="f1K-YP-glz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="ccn-pM-QWV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8Wl-6u-6ip" secondAttribute="trailing" constant="7" id="gfE-XS-CWZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="segmentedViewableControl" destination="8Wl-6u-6ip" id="Kp3-tp-BXM"/>
+            </connections>
+            <point key="canvasLocation" x="456" y="486"/>
+        </tableViewCell>
+    </objects>
+</document>

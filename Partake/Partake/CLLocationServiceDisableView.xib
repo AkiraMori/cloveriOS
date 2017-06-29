@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLLocationServiceDisableView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="To find activities nearby you must allow Partake to access your location." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrv-8a-GuI">
+                    <rect key="frame" x="68" y="213" width="279" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4q9-M5-n42"/>
+                        <constraint firstAttribute="width" constant="279" id="XQK-cS-u8o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap anywhere to go to Settings." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqg-2a-6l6">
+                    <rect key="frame" x="109" y="340" width="196" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="196" id="30n-WP-rPx"/>
+                        <constraint firstAttribute="height" constant="21" id="BgW-Ft-wVR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Go to Settings &gt; Privacy &gt; Location Services" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gn-uW-Cfe">
+                    <rect key="frame" x="57" y="276" width="300" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="VPL-1T-gzD"/>
+                        <constraint firstAttribute="width" constant="300" id="s8K-Ff-HHT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="2gn-uW-Cfe" secondAttribute="centerX" id="2V9-tT-uTL"/>
+                <constraint firstAttribute="centerX" secondItem="Rqg-2a-6l6" secondAttribute="centerX" id="5rD-hn-QEe"/>
+                <constraint firstAttribute="centerX" secondItem="Zrv-8a-GuI" secondAttribute="centerX" id="H6O-hZ-GrF"/>
+                <constraint firstAttribute="centerY" secondItem="2gn-uW-Cfe" secondAttribute="centerY" constant="34.5" id="K3C-Jy-mpV"/>
+                <constraint firstItem="2gn-uW-Cfe" firstAttribute="top" secondItem="Zrv-8a-GuI" secondAttribute="bottom" constant="23" id="U3T-JQ-7jf"/>
+                <constraint firstItem="Rqg-2a-6l6" firstAttribute="top" secondItem="2gn-uW-Cfe" secondAttribute="bottom" constant="42" id="YF0-KD-9Rd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <point key="canvasLocation" x="-632" y="507"/>
+        </view>
+    </objects>
+</document>

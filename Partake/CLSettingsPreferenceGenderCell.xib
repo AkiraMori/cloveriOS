@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="150" id="sVc-Qy-apI" customClass="CLSettingsPreferenceGenderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sVc-Qy-apI" id="Oxj-Q1-879">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jgQ-qh-qEt">
+                        <rect key="frame" x="15" y="61" width="290" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Q7f-cc-7mh"/>
+                        </constraints>
+                        <segments>
+                            <segment title="Both"/>
+                            <segment title="Male"/>
+                            <segment title="Female"/>
+                        </segments>
+                        <color key="tintColor" red="0.47058999540000002" green="0.70196002719999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </segmentedControl>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only show activities created by:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9n-Hk-vEx">
+                        <rect key="frame" x="15" y="29" width="203" height="16"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="jgQ-qh-qEt" secondAttribute="trailing" constant="7" id="9qY-ux-et8"/>
+                    <constraint firstAttribute="centerY" secondItem="jgQ-qh-qEt" secondAttribute="centerY" id="Jcr-oL-Yut"/>
+                    <constraint firstItem="q9n-Hk-vEx" firstAttribute="leading" secondItem="jgQ-qh-qEt" secondAttribute="leading" id="Tmt-wj-Ucl"/>
+                    <constraint firstItem="jgQ-qh-qEt" firstAttribute="top" secondItem="q9n-Hk-vEx" secondAttribute="bottom" constant="16" id="WJX-lp-JcA"/>
+                    <constraint firstItem="jgQ-qh-qEt" firstAttribute="leading" secondItem="Oxj-Q1-879" secondAttribute="leadingMargin" constant="7" id="vVT-f6-rO1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="456" y="483"/>
+        </tableViewCell>
+    </objects>
+</document>
